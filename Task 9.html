@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <style>
+    .button-container {
+      text-align: center;
+    }
+
+    .main-heading {
+      text-align: center;
+    }
+
+    .info-container {
+      display: flex;
+    }
+
+    .contact-details {
+      width: 50%;
+    }
+
+    .contact1-details {
+      width: 50%;
+    }
+
+    .info-section {
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .labels {
+      font-weight: bold;
+      display: inline-block;
+      width: 30%;
+      text-align: right;
+      padding-right: 10px;
+      box-sizing: border-box;
+    }
+
+    h3 {
+      margin-bottom: 10px;
+    }
+
+    .delivery-details-section {
+      text-align: center;
+    }
+
+    .required-fields-container {
+      display: flex;
+    }
+
+    .options-section {
+      margin-left: 180px;
+      width: 33.33%;
+    }
+  </style>
+</head>
+
+<body>
+  <form action="/action_page.php">
+    <div class="main-heading">
+      <h1>Pete's Pizza Delivery</h1>
+      <h3>Online Order Form</h3>
+    </div>
+
+    <div class="info-container">
+      <div class="contact-details">
+        <div class="info-section">
+          <div class="labels">
+            <label for="username">*Name:</label>
+          </div>
+          <input type="text" id="username" name="username"><br><br>
+        </div>
+        <div class="info-section">
+          <div class="labels">
+            <label>*Address:</label>
+          </div>
+          <input type="text"><br><br>
+        </div>
+        <div class="info-section">
+          <div class="labels">
+            <label>*Town/City:</label>
+          </div>
+          <input type="text"><br><br>
+        </div>
+        <div class="info-section">
+          <div class="labels">
+            <label>*Postcode:</label>
+          </div>
+          <input type="text"><br><br>
+        </div>
+      </div>
+
+      <div class="contact1-details">
+        <div class="info-section">
+          <div class="labels">
+            <label>*Tel:</label>
+          </div>
+          <input type="tel"><br><br>
+        </div>
+        <div class="info-section">
+          <div class="labels">
+            <label>*Email:</label>
+          </div>
+          <input type="email"><br><br>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-heading">
+      <p><b>*required fields</b></p>
+    </div>
+
+    <div class="required-fields-container">
+      <div class="options-section">
+        <h3>Topping</h3>
+        <div>
+          <input type="radio" name="fav_language">
+          <label>Margherita</label><br>
+          <input type="radio" name="fav_language">
+          <label>Four Seasons</label><br>
+          <input type="radio" name="fav_language">
+          <label>Meat Feast</label>
+        </div>
+      </div>
+
+      <div class="options-section">
+        <h3>Size</h3>
+        <input type="radio" id="small" name="fav_language" value="small">
+        <label for="small">Small</label><br>
+        <input type="radio" id="medium" name="fav_language" value="medium">
+        <label for="medium">Medium</label><br>
+        <input type="radio" id="large" name="fav_language" value="large">
+        <label for="large">Large</label>
+      </div>
+
+      <div class="options-section">
+        <h3>Extras</h3>
+        <div class="info-section">
+          <input type="checkbox">
+          <label>Mushrooms</label><br>
+          <input type="checkbox">
+          <label>Green peppers</label><br>
+          <input type="checkbox">
+          <label>Anchovies</label><br>
+          <input type="checkbox">
+          <label>Extra cheese</label><br><br><br>
+        </div>
+      </div>
+    </div>
+
+    <div class="delivery-details-section">
+
+      <label>Preferred delivery time: </label>
+
+      <input type="time">
+      <br><br>
+
+      <label>Delivery instructions:</label>
+
+      <textarea rows='4'></textarea>
+
+    </div><br>
+    <div class="button-container">
+      <button type="submit">Submit Order</button>
+    </div>
+  </form>
+</body>
+
+</html>

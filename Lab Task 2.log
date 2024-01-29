@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+HTML Formatting
+</title>
+</head>
+<body>
+<h1><b>This text is bold<b></h1>
+<p>My first paragraph .</p>
+</body>
+</html>
